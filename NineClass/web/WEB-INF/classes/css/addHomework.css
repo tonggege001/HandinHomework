@@ -1,0 +1,8 @@
+form > label {
+	width: 100px;
+	text-align: right;
+	display: inline-block;
+}
+form > input[type="text"] {
+	width: 234px;
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>UploadHandleServlet</servlet-name>  <!--指定Servlet名字-->
+        <servlet-class>Servlet.UploadHandleServlet</servlet-class>  <!--指定Servlet的完整限定名-->
+    </servlet>
+    <servlet>
+        <servlet-name>LoginInServlet</servlet-name>  <!--指定Servlet名字-->
+        <servlet-class>Servlet.LoginInServlet</servlet-class>  <!--指定Servlet的完整限定名-->
+    </servlet>
+    <servlet>
+        <servlet-name>DownloadHandleServlet</servlet-name>
+        <servlet-class>Servlet.DownloadHandleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadHandleServlet</servlet-name>
+        <url-pattern>/UploadHandle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginInServlet</servlet-name>
+        <url-pattern>/LoginHandle</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DownloadHandleServlet</servlet-name>
+        <url-pattern>/Download</url-pattern>
+    </servlet-mapping>
+    <listener>
+        <listener-class>Servlet.InitParam</listener-class>
+    </listener>
+</web-app>
