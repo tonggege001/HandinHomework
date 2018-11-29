@@ -99,7 +99,7 @@ public class Main {
 
     public static void main(String args[]) {
         //AddAllStudent();增加所有的人
-        //SendHomework("算法设计实验打包", "11月25日晚八点");
-        GetHomework("4");
+        SendHomework("算法设计实验打包", "11月25日晚八点");
+        //GetHomework("4");
     }
 }
