@@ -56,7 +56,6 @@ public class Main {
         f.mkdirs();
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            // Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/xyz","tonggege","127044");
             Connection conn = DriverManager.getConnection(url,user,pass);
             PreparedStatement preStmt = conn.prepareStatement("select * from upload_info " +
                     "where homework_id=?");
